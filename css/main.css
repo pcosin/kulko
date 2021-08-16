@@ -44,6 +44,10 @@ img {
   flex: 1;
 }
 
+.navbar .navbar-collapse {
+    text-align: center;
+  }
+
 .white-img {
   filter: invert(1);
 }
@@ -264,6 +268,7 @@ img {
   }
 }
 
+
 @media (max-width: 768px) {
   .boxText {
     position: absolute;
@@ -293,7 +298,7 @@ img {
 }
 
 .smaller {
-    font-size: .7rem;
+    font-size: .85rem;
 }
 
 }

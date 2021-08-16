@@ -84,7 +84,7 @@ img {
   background-image: url("../exportados-alta/dialog-top.png");
   background-position: center;
   position: relative;
-  
+  height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
 }

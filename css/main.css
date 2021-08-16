@@ -151,14 +151,9 @@ img {
 
 .pink-text2 {
   color: #af00b9;
-  
   margin-bottom: 1rem;
 }
 
-.pink-text3 {
-  color: #af00b9;
-
-}
 
 .bot-line {
   border-bottom: 2px solid black;
@@ -295,6 +290,10 @@ img {
 
   .preguntasFrecuentes .m-5 {
     margin: .5rem !important;
+}
+
+.smaller {
+    font-size: .7rem;
 }
 
 }

@@ -146,20 +146,18 @@ img {
 
 .pink-text {
   color: #af00b9;
-  font-size: 20px;
+ 
 }
 
 .pink-text2 {
   color: #af00b9;
-  font-weight: 700;
-  font-size: 30px;
+  
   margin-bottom: 1rem;
 }
 
 .pink-text3 {
   color: #af00b9;
-  font-weight: 700;
-  font-size: 40px;
+
 }
 
 .bot-line {
@@ -290,6 +288,15 @@ img {
   .small-image {
       max-width: 50%;
   }
+
+  .preguntasFrecuentes .p-5 {
+      padding: .5rem !important;
+  }
+
+  .preguntasFrecuentes .m-5 {
+    margin: .5rem !important;
+}
+
 }
 
 @media (max-width: 720px) {

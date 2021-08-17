@@ -30,6 +30,50 @@ img {
   margin-right: 0.5rem;
 }
 
+/*========== UTILITIES ==========*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .pink-text {
+      color: #af00b9;
+     
+    }
+    
+    .pink-text2 {
+      color: #af00b9;
+      margin-bottom: 1rem;
+    }
+  
+  
+    .start-button {
+      box-shadow: inset 0px 1px 0px 0px #594b5c;
+      background: linear-gradient(to bottom, #572473 5%, #4a354a 100%);
+      background-color: #572473;
+      border-radius: 28px;
+      border: 1px solid #0c0414;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 18px 35px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #8d6acc;
+    }
+    
+    .start-button:hover {
+      background: linear-gradient(to bottom, #4a354a 5%, #572473 100%);
+      background-color: #4a354a;
+    }
+    .start-button:active {
+      position: relative;
+      top: 1px;
+    }  
+
 /*========== NavBar ==========*/
 
 .navbar-custom {
@@ -84,22 +128,39 @@ img {
   z-index: 1;
 }
 
-.box {
+
+
+/* .box {
   background-image: url("../exportados-alta/dialog-top.png");
   background-position: center;
   position: relative;
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+} */
+
+
+.box_1 {
+    position: relative;
 }
 
 .boxText {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+   
+}
+
+/* .boxText {
   position: absolute;
   bottom: 33%;
   transform: translate(-50%);
   left: 55%;
   transform: translate(-50%);
-}
+} */
 
 .dialog-text {
   line-height: 0.1rem;
@@ -107,32 +168,10 @@ img {
   font-weight: 500;
 }
 
-.round2 {
-  border: 5px solid #af00b9;
-  border-radius: 25px;
-  padding: 1rem;
-  height: 100%;
-  width: 100%;
-  padding-bottom: 10%;
-  margin-bottom: 10%;
-}
 
-.imgColumn {
-  margin: 0 auto;
-}
 
-.img2top2 {
-  display: block;
-  max-width: 100%;
-  min-width: none;
-}
+/*========== Ofrecemos ==========*/
 
-/*========== UTILITIES ==========*/
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
 
 .round1 {
   border: 5px solid #af00b9;
@@ -148,47 +187,63 @@ img {
   transform: translate(2%, -25%);
 }
 
-.pink-text {
-  color: #af00b9;
- 
-}
-
-.pink-text2 {
-  color: #af00b9;
-  margin-bottom: 1rem;
-}
+/*========== Precios ==========*/
 
 
-.bot-line {
-  border-bottom: 2px solid black;
-  margin: 2rem 0;
-}
+.round2 {
+    border: 5px solid #af00b9;
+    border-radius: 25px;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .imgColumn {
+    margin: 0 auto;
+  }
+  
+  .img2top2 {
+    display: block;
+    max-width: 100%;
+    min-width: none;
+  }
+  
+  .bot-line {
+      border-bottom: 2px solid black;
+      margin: 2rem 0;
+    }
+  
 
-.start-button {
-  box-shadow: inset 0px 1px 0px 0px #594b5c;
-  background: linear-gradient(to bottom, #572473 5%, #4a354a 100%);
-  background-color: #572473;
-  border-radius: 28px;
-  border: 1px solid #0c0414;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 18px 35px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #8d6acc;
-}
+    /*========== Imagen con numeros ==========*/
 
-.start-button:hover {
-  background: linear-gradient(to bottom, #4a354a 5%, #572473 100%);
-  background-color: #4a354a;
-}
-.start-button:active {
-  position: relative;
-  top: 1px;
-}
+    .grafico{
+        position: relative;
+    }
+
+
+    .numeros_1 {
+        position: absolute;
+        top: 65%;
+    left: 13%;
+    transform: translate(-87%, -45%);
+    }
+
+    .numeros_2 {
+        position: absolute;
+        top: 65%;
+    left: 41%;
+    transform: translate(-59%, -45%);
+    }
+
+    .numeros_3 {
+        position: absolute;
+        top: 65%;
+    left: 70%;
+    transform: translate(-30%, -45%);
+    }
+
 
 /*========== FQA ==========*/
 
@@ -260,21 +315,21 @@ img {
 
 /*========== MEDIA ==========*/
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .boxText {
     position: absolute;
     left: 55%;
     transform: translate(-50%);
   }
-}
+} */
 
 
 @media (max-width: 768px) {
-  .boxText {
+  /* .boxText {
     position: absolute;
     left: 55%;
     transform: translate(-50%);
-  }
+  } */
 
   .border-left {
     border-left: none;
@@ -297,9 +352,9 @@ img {
     margin: .5rem !important;
 }
 
-.smaller {
+ .smaller {
     font-size: .85rem;
-}
+} 
 
 }
 
